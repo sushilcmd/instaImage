@@ -1,10 +1,10 @@
 # InstaImage
 Get all images from Instagram using hashtag. 
 
-#Getting started
+# Getting started
 
 <h3>Prerequisite</h3>
-1. nodejs
+nodejs
 
 <h3>Setup App</h3>
 1. For install all dependencies run
@@ -12,7 +12,6 @@ Get all images from Instagram using hashtag.
 ```
 npm install
 ```
-
 2. Change port no  
 replace this with your ip or you can run on localhost.
 ```
