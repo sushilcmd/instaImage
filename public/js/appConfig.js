@@ -7,7 +7,7 @@ var env = 'LOCAL';
 function setEnvironmentSpecifics(env) {
     switch (env) {
         case 'LOCAL':
-            ioUrl = 'http://10.0.0.186:5024';
+            ioUrl = 'http:/instagramimagescrapper.herokuapp.com:5024';
             enablePassword = 0;
             break;
     }
