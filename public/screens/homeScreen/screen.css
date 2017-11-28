@@ -1,0 +1,207 @@
+body {
+  padding: 0rem;
+  margin: 0rem;
+  font-family: "Montserrat";
+}
+.mainContainer {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: url(../../images/bg.jpg);
+  background-size: cover;
+}
+.mainContainer .searchContainer {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.7);
+}
+.mainContainer .searchContainer .searchBox {
+  position: absolute;
+  height: 8rem;
+  width: 66rem;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 1rem;
+}
+.mainContainer .searchContainer .searchBox .textBoxContainer {
+  position: absolute;
+  top: 1.5rem;
+  bottom: 1.5rem;
+  left: 1.5rem;
+  right: 1.5rem;
+}
+.mainContainer .searchContainer .searchBox .textBoxContainer .textBox {
+  position: absolute;
+  height: 100%;
+  left: 0rem;
+  right: 15rem;
+  box-sizing: border-box;
+  border-bottom-left-radius: 0.5rem;
+  border-top-left-radius: 0.5rem;
+}
+.mainContainer .searchContainer .searchBox .textBoxContainer .textBox .inputText {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  outline: none;
+  box-sizing: border-box;
+  color: black;
+  background: white;
+  border: none;
+  border-bottom-left-radius: 0.5rem;
+  border-top-left-radius: 0.5rem;
+  text-align: center;
+}
+.mainContainer .searchContainer .searchBox .textBoxContainer .btn {
+  position: absolute;
+  right: 0rem;
+  height: 100%;
+  width: 15rem;
+  background: #d83c3c;
+  border-bottom-right-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+  text-align: center;
+  line-height: 5rem;
+  font-size: 1.8rem;
+  color: #fff;
+  text-transform: uppercase;
+}
+.mainContainer .imagesContainer {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: black;
+  display: none;
+}
+.mainContainer .imagesContainer .header {
+  position: absolute;
+  height: 8rem;
+  width: 100%;
+  top: 0rem;
+}
+.mainContainer .imagesContainer .header .playIcon {
+  position: absolute;
+  height: 6rem;
+  top: 1rem;
+  right: 1rem;
+  width: 10rem;
+  background: red;
+}
+.mainContainer .imagesContainer .header .playIcon .icon {
+  position: absolute;
+  height: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.mainContainer .imagesContainer .allImages {
+  position: absolute;
+  top: 8rem;
+  bottom: 0rem;
+  width: 100%;
+  overflow: auto;
+}
+.mainContainer .imagesContainer .allImages .hashTagImage {
+  position: relative;
+  float: left;
+  height: auto;
+  width: 36rem;
+  margin-left: 3rem;
+  margin-top: 3rem;
+  border: 2px solid #f0c517;
+  border-radius: 1.5rem;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+.mainContainer .imagesContainer .allImages .hashTagImage .img {
+  position: relative;
+  float: left;
+  height: 40rem;
+  width: 100%;
+}
+.mainContainer .imagesContainer .allImages .hashTagImage .img .instaImage {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
+.mainContainer .imagesContainer .allImages .hashTagImage .img .overlay {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.7);
+}
+.mainContainer .imagesContainer .allImages .hashTagImage .imageInfo {
+  position: relative;
+  float: left;
+  height: 6rem;
+  width: 100%;
+  background: white;
+}
+.mainContainer .imagesContainer .allImages .hashTagImage .imageInfo .info {
+  position: relative;
+  float: left;
+  height: 4rem;
+  width: 8rem;
+  background: #f0c517;
+  margin-top: 1rem;
+  margin-left: 1rem;
+  border-radius: 0.5rem;
+  box-shadow: 0px 0px 4px #333;
+  box-sizing: border-box;
+  text-align: center;
+}
+.mainContainer .imagesContainer .allImages .hashTagImage .imageInfo .info .imageIcon {
+  position: relative;
+  float: left;
+  height: 100%;
+  width: 60%;
+}
+.mainContainer .imagesContainer .allImages .hashTagImage .imageInfo .info .imageIcon .icon {
+  position: absolute;
+  height: 2.5rem;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.mainContainer .imagesContainer .allImages .hashTagImage .imageInfo .info .value {
+  position: relative;
+  display: inline-block;
+  height: 100%;
+  width: 40%;
+  line-height: 4rem;
+  text-align: left;
+  font-size: 1.8rem;
+  text-transform: capitalize;
+  color: #333;
+}
+.mainContainer .imagesContainer .allImages .hashTagImage .imageInfo .info.date {
+  width: 14rem;
+}
+.mainContainer .imagesContainer .allImages .hashTagImage .caption {
+  position: relative;
+  float: left;
+  height: 10rem;
+  width: 100%;
+  background: #fff;
+  margin-top: 0.2rem;
+  padding: 1rem 1.5rem 1rem 1.5rem;
+  box-sizing: border-box;
+  font-size: 1.6rem;
+  color: #333;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: pre-wrap;
+  font-weight: 200;
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+}
+.mainContainer .imagesContainer .allImages .hashTagImage:hover {
+  transition: 0.3s;
+  box-shadow: 0px 0px 10px #f0c517;
+  box-sizing: border-box;
+}

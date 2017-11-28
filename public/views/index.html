@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="../css/screen.css" rel="stylesheet">
+    <link href="../css/fonts.css" rel="stylesheet">
+    <link href="../screens/homeScreen/screen.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="mainContainer">
+        <div class="searchContainer">
+            <div class="searchBox">
+                <div class="textBoxContainer">
+                    <div class="textBox">
+                        <input type="text" class="inputText" placeholder="search keyword">
+                    </div>
+                    <div class="btn search">search</div>
+                </div>
+            </div>
+        </div>
+        <div class="imagesContainer">
+
+        </div>
+    </div>
+</body>
+
+<script type="text/x-jquery-tmpl" id="allhashtagsImagesTemplate">
+    <div class="header">
+        <div class="playIcon">
+            <img src="../images/play.png" class="icon">
+        </div>
+    </div>
+    <div class="allImages">
+        {{each(i,v) media.nodes}}
+        <div class="hashTagImage" data-index="{{html i}}">
+            <div class="img">
+                <img src="{{html display_src}}" class="instaImage">
+            </div>
+            <div class="imageInfo">
+                <div class="info date">
+                    <div class="imageIcon">
+                        <img src="../images/calendar.png" class="icon">
+                    </div>
+                    <div class="value">{{html likes.count}}</div>
+                </div>
+                <div class="info likes">
+                    <div class="imageIcon">
+                        <img src="../images/likes.png" class="icon">
+                    </div>
+                    <div class="value">{{html likes.count}}</div>
+                </div>
+                <div class="info comment">
+                    <div class="imageIcon">
+                        <img src="../images/comment.png" class="icon">
+                    </div>
+                    <div class="value">{{html comments.count}}</div>
+                </div>
+            </div>
+            <div class="caption">{{html caption}}</div>
+        </div>
+        {{/each}}
+    </div>
+</script>
+
+<script src="../scripts/jquery-3.js"></script>
+<script src="../scripts/transit.js"></script>
+<script src="../scripts/highcharts.js"></script>
+<script src="../scripts/jquery.tmpl.min.js"></script>
+<script src="../scripts/jslinq.js"></script>
+<script src="../scripts/moment.min.js"></script>
+<script src="../scripts/socket.io.js"></script>
+<script src="../scripts/superjson.js"></script>
+<script src="../scripts/tocca.js"></script>
+<script src="../scripts/jquery.cookie.js"></script>
+<script src="../scripts/polyfill.js"></script>
+<script src="../js/base.js"></script>
+<script src="../js/appConfig.js"></script>
+<script src="../screens/homeScreen/screen.js"></script>
+
+</html>
