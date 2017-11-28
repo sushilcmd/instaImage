@@ -1,6 +1,5 @@
 var eventToUse = 'click';
 
-
 function makeTemplates() {
     var templateName = '';
     $('script[type="text/x-jquery-tmpl"]').each(function(index, item) {
@@ -21,7 +20,6 @@ function rb(element, template, data, button, cb, rcb) {
         });
     })
 }
-
 
 function render(element, template, data, cb) {
     $(element).html('');
